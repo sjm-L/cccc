@@ -4,18 +4,15 @@ namespace ConsoleApp1;
 
 class Program
 {
-  static void Main(string[] args)
+  static void Main()
   {
-    Book gulliver = new Book();
-    Console.WriteLine(gulliver);
-  }
-}
+    List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
 
-class Book
-{
-  string Title;
-  decimal ISBN13;
-  string Contents;
-  string Author;
-  int pageCpunt;
+    var evenNumbers = numbers.Where(n => n % 2 == 0);
+
+    foreach (var num in evenNumbers)
+    {
+      Console.WriteLine(num);
+    }
+  }
 }

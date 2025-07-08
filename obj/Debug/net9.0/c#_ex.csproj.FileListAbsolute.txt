@@ -1,0 +1,15 @@
+/Users/shower/Desktop/c#_ex/bin/Debug/net9.0/c#_ex
+/Users/shower/Desktop/c#_ex/bin/Debug/net9.0/c#_ex.deps.json
+/Users/shower/Desktop/c#_ex/bin/Debug/net9.0/c#_ex.runtimeconfig.json
+/Users/shower/Desktop/c#_ex/bin/Debug/net9.0/c#_ex.dll
+/Users/shower/Desktop/c#_ex/bin/Debug/net9.0/c#_ex.pdb
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.AssemblyInfoInputs.cache
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.AssemblyInfo.cs
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.csproj.CoreCompileInputs.cache
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.sourcelink.json
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.dll
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/refint/c#_ex.dll
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.pdb
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/c#_ex.genruntimeconfig.cache
+/Users/shower/Desktop/c#_ex/obj/Debug/net9.0/ref/c#_ex.dll

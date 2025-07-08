@@ -1,21 +1,21 @@
-﻿namespace ConsoleApp1
+﻿using System.Collections.Concurrent;
+
+namespace ConsoleApp1;
+
+class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int n = 1, sum = 0;
+  static void Main(string[] args)
+  {
+    Book gulliver = new Book();
+    Console.WriteLine(gulliver);
+  }
+}
 
-            while (n < 10000)
-            {
-                if (n % 3 == 0 || n % 5 == 0)
-                {
-                    sum += n;
-                }
-                n++;
-            }
-
-            Console.WriteLine(sum);
-        }
-    }
+class Book
+{
+  string Title;
+  decimal ISBN13;
+  string Contents;
+  string Author;
+  int pageCpunt;
 }

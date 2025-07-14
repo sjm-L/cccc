@@ -11,5 +11,5 @@ public class Program
   {
     var box = new Box<int>();
     box.Add(10);
-    string s = box.Get(); // 
+    string s = box.Get(); // 컴팡일에러가 에러가남 객체를 생성할때 int로 만들었는데 string으롬 만들려고 하니깐 컴파일 에러가 생기는 것 같습니다.
 }

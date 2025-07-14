@@ -1,15 +1,23 @@
-﻿public class Box<T>
+﻿class Program
 {
-  private T item;
-  public void Add(T value) => item = value;
-  public T Get() => item;
-}
-
-public class Program
-{
-  static void Main()
+  public class Quset<T>
   {
-    var box = new Box<int>();
-    box.Add(10);
-    string s = box.Get(); // 컴팡일에러가 에러가남 객체를 생성할때 int로 만들었는데 string으롬 만들려고 하니깐 컴파일 에러가 생기는 것 같습니다.
+    public string Title { get; set; }
+    public T Reward { get; set; }
+
+    public void ShowReward()
+    {
+      Console.WriteLine($"퀘스트'{Title}'의 보상: {Reward}");
+    }
+  }
+  static void Main(string[] args)
+  {
+    var goldQuest = new Quset<int> { Title = "도전 소탕", Reward = 1000 };
+    var itemQuest = new Quset<string> { Title = "마법서 찾기", Reward = "마법서" };
+    var xpQuest = new Quset<float> { Reward = 25.5f, Title = "경험치 상승률" };
+
+    goldQuest.ShowReward();
+    itemQuest.ShowReward();
+    xpQuest.ShowReward();
+  }
 }

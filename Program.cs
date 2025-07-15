@@ -72,7 +72,10 @@ class Program
   {
     string item_One = "사과";
     string item_two = "우유";
-    string fileName = "shopping.txt";
+    //string fileName = "shopping.txt";
+    string fileName = "C:\\이것도 만들어지면문제이지\\shopping.txt";
+    // 1. 디렉토리 존재 여부 확인
+        Console.WriteLine("실행 전 디렉토리 존재 여부: " + Directory.Exists(fileName));
 
     string content = "구매할 것들: \n1. " + item_One + "\n2. " + item_two;
 

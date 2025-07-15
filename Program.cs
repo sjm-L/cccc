@@ -41,22 +41,22 @@
   }
   public static void Main(string[] args)
   {
-    var GoldReward = new GoldReward
+    var goldReward = new GoldReward
     {
       Amount = 500
     };
-    var ItemReward = new ItemReward
+    var itemReward = new ItemReward
     {
       ItemName = "현자의 돌"
     };
 
-    var XPReward = new XPReward
+    var xpReward = new XPReward
     {
       XP = 25.5f
     };
 
-    Console.WriteLine(GoldReward.Describe);
-    Console.WriteLine(ItemReward.Describe);
-    Console.WriteLine(XPReward.Describe);
+    goldReward.Describe();
+    itemReward.Describe();
+    xpReward.Describe();
   }
 }

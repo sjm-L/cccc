@@ -1,32 +1,42 @@
-﻿using System.Reflection;
-
-class Program
+﻿class Program
 {
-  public class ComplexQuest 
+
+  //1단계 : 보상 인터페이스 만들기
+  public interface IReward
   {
-    public int Gold { get; set; }
-    public string Item { get; set; }
-    public float XP { get; set; }
+    void Describe();
   }
-
-  public class Quest<T>
+  //2단계 : 다양한 보상 클래스 만들기
+  //골드 보상
+  public class GoldReward : IReward
   {
-    public string Title { get; set; }
-    public T Reward { get; set; }
-  }
-
-
-  public static void Main(string[] args)
-  {
-    var comlexQuest = new Quest<ComplexQuest>
+    public int Amount { get; set; }
+    public void Describe()
     {
-      Title = "고블린 왕 처치",
-      Reward = new ComplexQuest
-      {
-        Gold = 100,
-        Item = "전설의 검",
-        XP = 250.5f
-      }
-    };
+      //TODO: 골드 출력
+      Console.WriteLine($"{Amount}골드 출력");
+
+    }
+  }
+
+  public class ItemReward : IReward
+  {
+    public string ItemName { get; set; }
+    public void Describe()
+    {
+      //TODO : 아이템 출력
+      Console.WriteLine($"{ItemName}아이템 출력");
+    }
+  }
+
+  //경혐치 보상
+  public class XPReward : IReward
+  {
+    public float XP { get; set; }
+    public void Describe()
+    {
+      //TODO : XP 출력
+      Console.WriteLine($"{XP}XP 출력");
+    }
   }
 }

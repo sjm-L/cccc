@@ -1,24 +1,32 @@
-﻿class Program
+﻿using System.Reflection;
+
+class Program
 {
+  public class ComplexQuest 
+  {
+    public int Gold { get; set; }
+    public string Item { get; set; }
+    public float XP { get; set; }
+  }
+
   public class Quest<T>
   {
     public string Title { get; set; }
     public T Reward { get; set; }
-
-    public void ShowReward()
-    {
-      Console.WriteLine($"퀘스트 '{Title}'의 보상 : {Reward}");
-    }
   }
+
 
   public static void Main(string[] args)
   {
-    var goldQuest = new Quest<int> { Title = "도적 소탕", Reward = 1000 };
-    var itemQuest = new Quest<string> { Title = "마법서 찾기", Reward = "마법서" };
-    var xpQuest = new Quest<float> { Title = "훈현 참여", Reward = 25.25F };
-
-    goldQuest.ShowReward();
-    itemQuest.ShowReward();
-    xpQuest.ShowReward();
+    var comlexQuest = new Quest<ComplexQuest>
+    {
+      Title = "고블린 왕 처치",
+      Reward = new ComplexQuest
+      {
+        Gold = 100,
+        Item = "전설의 검",
+        XP = 250.5f
+      }
+    };
   }
 }
